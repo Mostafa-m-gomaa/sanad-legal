@@ -1,0 +1,94 @@
+.landing {
+  width: 100%;
+  padding: 100px 0 30px 0;
+  height: 79.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .landing {
+    flex-direction: column-reverse;
+    padding: 5px 0;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+}
+.landing .left {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .landing .left {
+    width: 100%;
+  }
+}
+.landing .left .container p {
+  background-color: var(--my-color);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 160px auto 0 auto;
+}
+@media (max-width: 767px) {
+  .landing .left .container p {
+    margin: 0;
+  }
+}
+.landing .right {
+  width: 45%;
+  background-color: var(--my-color);
+  -webkit-clip-path: polygon(76% 0, 100% 0, 100% 35%, 100% 100%, 77% 100%, 49% 100%, 34% 81%, 0 34%, 16% 0, 41% 0);
+          clip-path: polygon(76% 0, 100% 0, 100% 35%, 100% 100%, 77% 100%, 49% 100%, 34% 81%, 0 34%, 16% 0, 41% 0);
+}
+@media (max-width: 767px) {
+  .landing .right {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    padding: 70px 0 20px 0;
+    border-radius: 0 0 20px 20px;
+  }
+}
+.landing .right .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+.landing .right .container div {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing .right .container div {
+    font-size: 15px;
+    justify-content: center;
+  }
+}
+.landing .right .container span {
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding: 0 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .landing .right .container span {
+    font-size: 25px;
+  }
+}
+.landing .right .container img {
+  width: 200px;
+  padding: 20px;
+  background-color: white;
+  margin: 90px auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}/*# sourceMappingURL=landing.css.map */

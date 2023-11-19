@@ -1,0 +1,135 @@
+@import "../helpers/mixins";
+.articles{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(216, 208, 208);
+    // height: 90vh;
+    color: white;
+    padding: 110px 0 0 0;
+    h1{
+        margin: 0;
+        padding: 0;
+        background-color: var(--my-color);
+        text-align: end;
+        padding: 0 20px;
+        border-radius: 15px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .all-art{
+        width: 100%;
+    
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        @include media(mopile){
+            padding: 10px 0;
+                        
+                                      }
+        justify-content: center;
+        @include media(mopile){
+           flex-direction: column-reverse;
+           gap: 25px;
+                        
+                                      }
+        .search{
+            width: 20%;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 15px 5px;
+            @include media(mopile){
+                width: 80% ;
+                margin: auto;
+                            
+                                          }
+            .title{
+                border-bottom: 2px solid;
+              
+            }
+            .srch-btn{
+                // background-color: var(--my-color);
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 15px 0;
+                margin-top: 20px;
+                border-radius: 5px;
+                gap: 15px;
+
+                input{
+                    width: 80%;
+                    margin: auto;
+                    height: 20px;text-align: center;
+                }
+                button{
+                    width: 80px;
+                    margin: auto;
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                    cursor: pointer;
+                }
+            }
+        }
+        .arts{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            // background-color: aqua;
+            padding: 10px;
+            @include media(mopile){
+                width: 90% ;
+                margin: auto;
+                            
+                                          }
+            .article-card{
+                width: 100%;
+                margin: auto;
+                background-color: white;
+                color: black;
+                padding: 10px 0;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h2{
+                    padding: 0;
+                    margin: 0;
+                }
+          
+                a{
+                    background-color: var(--my-color);
+                    padding: 5px;
+                    border-radius: 5px;
+                    width: 150px;
+                    margin: auto;
+                    color: white;
+                }
+                .desc{
+                    width: 90%;
+                    max-width: 90%;
+                    height: fit-content;
+                    margin: auto;
+                }
+                img{
+                    max-width: 40%;
+                    min-width: 40%;
+                    margin-top: 10px;
+                    margin: auto;
+                    border-radius: 10px;
+                    
+                }
+            }
+        }
+    }
+}

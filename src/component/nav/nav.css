@@ -1,0 +1,96 @@
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 300;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+@media (max-width: 767px) {
+  .nav .container {
+    position: relative;
+  }
+}
+.nav .container .burger {
+  display: none;
+}
+@media (max-width: 767px) {
+  .nav .container .burger {
+    display: block;
+    width: 40px;
+  }
+}
+.nav .container img {
+  width: 120px;
+}
+.nav .container .list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .nav .container .list {
+    position: absolute;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    left: -200%;
+    top: 120px;
+    transition: 0.2s;
+    border: 4px solid var(--my-color);
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+.nav .container .list a {
+  transition: 0.2s;
+  padding: 5px;
+  border-radius: 5px;
+}
+.nav .container .list .active {
+  background-color: var(--my-color);
+  color: white;
+}
+.nav .container .list .library {
+  position: relative;
+}
+.nav .container .list .library:hover .library-list {
+  top: 39px;
+}
+.nav .container .list .library .library-list {
+  position: absolute;
+  top: 1110px;
+  left: -1800 !important;
+  text-align: center;
+  padding: 5px 10px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 250px;
+  background-color: white;
+  color: rgb(255, 255, 255);
+  border: 2px solid var(--my-color);
+  border-radius: 8px;
+  left: -20px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+.nav .container .list .library .library-list a {
+  background-color: var(--my-color);
+}
+@media (max-width: 767px) {
+  .nav .container .list-show {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=nav.css.map */

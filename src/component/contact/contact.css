@@ -1,0 +1,43 @@
+.contact {
+  width: 100%;
+  padding: 100px 0 20px 0;
+}
+.contact h1 {
+  text-align: center;
+}
+.contact .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .contact .cards {
+    flex-direction: column;
+  }
+}
+.contact .cards .card {
+  width: 20%;
+  background-color: var(--my-color);
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+@media (max-width: 767px) {
+  .contact .cards .card {
+    width: 60%;
+    margin: auto;
+  }
+}
+.contact .cards .card:hover {
+  background-color: black;
+}
+.contact .cards .card svg {
+  font-size: 35px;
+}/*# sourceMappingURL=contact.css.map */

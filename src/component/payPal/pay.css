@@ -1,0 +1,48 @@
+.pay-pal {
+  min-height: 76vh;
+  position: relative;
+  padding: 100px 0 20px 0;
+}
+@media (max-width: 767px) {
+  .pay-pal {
+    min-height: 100vh;
+  }
+}
+.pay-pal iframe {
+  border: 2px solid !important;
+  width: 50% !important;
+  margin: auto !important;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 70px !important;
+}
+@media (max-width: 767px) {
+  .pay-pal iframe {
+    margin-top: 250px !important;
+    width: 90% !important;
+  }
+}
+.pay-pal .container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.pay-pal .container .price {
+  margin: 20px auto;
+  background-color: rgb(233, 191, 2);
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .pay-pal .container .price {
+    font-size: 13px;
+    position: relative;
+    top: 200px;
+  }
+}/*# sourceMappingURL=pay.css.map */

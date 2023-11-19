@@ -1,0 +1,53 @@
+@import "../helpers/mixins";
+.sanad{
+    width: 100%;
+    padding: 100px 0 20px 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h1{
+            background-color: var(--my-color);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        form{
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 60%;
+            margin: auto;
+            @include media(mopile){
+                width: 90%;
+                       
+                                     }
+            button{
+                width: 20%;
+                margin: auto;
+                background-color: var(--my-color);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                border: none;
+
+            }
+            label{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                input{
+                    width: 70%;
+                    
+                }
+            }
+        }
+    }
+}

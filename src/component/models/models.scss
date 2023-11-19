@@ -1,0 +1,240 @@
+@import "../helpers/mixins";
+.models{
+    width: 100%;
+    padding: 100px 0 20px 0;
+    // background-color: rgb(164, 170, 170);
+    .serch{
+        width: 100;
+       box-shadow: 1px 1px 10px;
+       display: flex;
+       justify-content: center;
+       margin: auto;
+       border-radius: 10px;
+       margin-bottom: 20px;
+       
+       label{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+        input{
+            text-align: center;
+        }
+        button{
+            width: 50%;
+            background-color: var(--my-color);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin: auto;
+            cursor: pointer;
+            font-weight: bolder;
+
+        }
+       }
+    }
+    .confirm{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.733);
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        z-index: 120;
+        color: white !important;
+        width: 50%;
+        // color: black;
+        @include media(mopile){
+           width: 80%;
+                       
+                                     }
+        .btns{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 25px;
+            color: white !important;
+            button{
+                width: 40%;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 17px;
+                color: white !important;
+               
+            }
+            .yes{
+                background-color: red;
+                color: white !important;
+                cursor: pointer;
+                border: none;
+            }
+            .no{
+                background-color: green;
+                color: white !important;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+    .pdf-cont{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+       z-index: 500000;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+  
+        .over{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.541);
+            position: fixed;
+            z-index: 1;
+         
+        }
+        .iframe-cont{
+            overflow: 'scroll';
+            height: 100vh;
+      
+        }
+       iframe{
+        width: 80%;
+        height: 80%;
+        position:relative;
+        z-index: 100;
+        @include media(mopile){
+         margin: auto;
+         width: 100%;
+         height: 75%;
+         }
+       }
+
+    }
+    .making-order{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        // background-color: rgba(0, 0, 0, 0.61);
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .over{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.61);
+            top: 0;
+            left: 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            width: 50%;
+            padding: 20px;
+            border-radius: 8px;
+            border: 4px solid var(--my-color);
+            z-index: 10;
+            @include media(mopile){
+              width: 90%;
+                        
+                                      }
+            button{
+                width: 100px;
+                margin: auto;
+                background-color: var(--my-color);
+                color: white;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            label{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    h1{
+        text-align: center;
+        background-color: var(--my-color);
+        border-radius: 10px;
+        color: white;
+    }
+    .models-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.671);
+        padding: 15px 3px;
+        border-radius: 10px;
+        flex-wrap: wrap ;
+        @include media(mopile){
+           width: 90%;
+                    
+                                  }
+        .model-card{
+            width: 14%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            @include media(mopile){
+               width: 70%;
+                        
+                                      }
+            .title{
+                font-size: 17px;
+                border-bottom: 1px solid;
+            }
+            .order ,.download ,a{
+                background-color: var(--my-color);
+                cursor: pointer;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: 10px;
+                padding: 5px 3px;
+                border-radius: 5px;
+                transition: 0.2s;
+                font-size: 12px;
+                color: white;
+                &:hover{
+                    background-color: rgb(0, 0, 0);
+                    
+
+                }
+            }
+            img{
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 150px;
+                min-height: 150px;
+                background-color: white;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,43 @@
+@import "../helpers/mixins";
+.contact{
+    width: 100%;
+    padding: 100px 0 20px 0;
+    h1{
+        text-align: center;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+        gap: 20px;
+        @include media(mopile){
+           flex-direction: column;
+                   
+                                 }
+        .card{
+            width: 20%;
+            background-color: var(--my-color);
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.2s;
+            @include media(mopile){
+                width: 60%;
+                margin: auto;
+                       
+                                     }
+            &:hover{
+                background-color: black;
+            }
+            svg{
+                font-size: 35px;
+            }
+        }
+    }
+}

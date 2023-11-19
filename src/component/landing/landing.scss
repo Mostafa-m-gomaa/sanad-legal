@@ -1,0 +1,95 @@
+@import "../helpers/mixins";
+.landing{
+    width: 100%;
+    padding: 100px 0 30px 0;
+    height: 79.5vh;
+
+    display: flex;
+    justify-content: space-between;
+    @include media(mopile){
+       flex-direction: column-reverse;
+       padding: 5px 0;
+       min-height: 100vh;
+    
+       max-width: 100%;
+            
+                          }
+    .left{
+        width: 50%;
+        @include media(mopile){
+           width: 100%;
+                
+                              }
+        .container{
+            p{
+               background-color: var(--my-color);
+               color: white;
+               padding: 10px;
+               border-radius: 10px;
+               text-align: center;
+               margin: 160px auto 0 auto;
+               @include media(mopile){
+               margin: 0;
+                    
+                                  }
+            }
+        }
+    }
+    .right{
+            width: 45%;
+            background-color: var(--my-color);
+            clip-path: polygon(76% 0, 100% 0, 100% 35%, 100% 100%, 77% 100%, 49% 100%, 34% 81%, 0 34%, 16% 0, 41% 0);
+            @include media(mopile){
+                width: 100%;
+                clip-path: none;
+                padding: 70px 0 20px 0;
+                border-radius: 0 0 20px 20px;
+                    
+                                  }
+               .container{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                height: 100%;
+
+               
+                div{
+                font-size: 18px;
+                 color: white;
+                 text-align: center;
+                  font-weight: bolder;
+                  width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                  align-items: center;
+                  @include media(mopile){
+                font-size: 15px;
+                justify-content: center;
+                    
+                        
+                                      }
+                                    }
+                                    span{
+                                        @include media(mopile){
+                                            font-size: 25px; }
+                                      font-size: 40px;
+                                      letter-spacing: 5px;
+                                      padding: 0 5px;
+                                      border: 1px solid white;
+                                      border-radius: 10px;
+                                      margin-right: 10px
+                                 
+                                    }
+            img{
+                width: 200px;
+            padding: 20px;
+        background-color: white;
+        margin: 90px auto;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        }
+   
+        }
+    }
+  
+}

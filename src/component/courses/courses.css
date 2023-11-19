@@ -1,0 +1,61 @@
+.courses {
+  width: 100%;
+  padding: 100px 0 20px 0;
+}
+.courses h1 {
+  text-align: center;
+  background-color: var(--my-color);
+  color: white;
+  border-radius: 10px;
+}
+.courses .all-courses {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .courses .all-courses {
+    width: 90%;
+  }
+}
+.courses .all-courses .course-card {
+  width: 18%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+@media (max-width: 767px) {
+  .courses .all-courses .course-card {
+    width: 50%;
+  }
+}
+.courses .all-courses .course-card .title {
+  color: rgb(26, 48, 143);
+  text-align: center;
+  font-weight: 900;
+}
+.courses .all-courses .course-card img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+}
+.courses .all-courses .course-card .watch {
+  cursor: pointer;
+  background-color: var(--my-color);
+  padding: 5px;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+}/*# sourceMappingURL=courses.css.map */
